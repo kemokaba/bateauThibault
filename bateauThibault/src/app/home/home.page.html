@@ -1,20 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+     Bateau Thibault
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content> 
+  <ion-card-header>
+    Vente en direct de notre bureau
+    Produit selon la saison, Livraison sur Paris
+  </ion-card-header>
+<ion-card-content>
+    <ion-button  size="large" color="primary">Produit et Promotions</ion-button><br>
+    <ion-button (click)="onClick()"  >Bateaux</ion-button>
+    <ion-button  >Restaurants</ion-button><br>
+    <ion-button  >Recettes</ion-button>
+    <ion-button (click)="contact()"  >Contacts</ion-button>
+</ion-card-content>
 </ion-content>

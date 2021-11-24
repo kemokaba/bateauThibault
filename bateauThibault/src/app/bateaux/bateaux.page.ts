@@ -21,8 +21,7 @@ export class BateauxPage implements OnInit {
    
 ]
   
- 
-  
+
   constructor(public modalCtrl: ModalController) {}  
 async showModal(modelData){
   const modal = await this.modalCtrl.create({

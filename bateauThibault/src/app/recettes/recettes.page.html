@@ -29,13 +29,8 @@
   <br>
   <p>
   <ion-card-content>
-  <ion-card>
-    <ion-button>Homard</ion-button>
-    <ion-button>St Jacques</ion-button><br>
-    <ion-button>Bar</ion-button>
-    <ion-button>Tourteu</ion-button><br>
-    <ion-button>Recettes</ion-button>
-    <ion-button>Recttes</ion-button>
+  <ion-card  >
+    <ion-button *ngFor="let rec of recettes">{{rec}}</ion-button>
   </ion-card>
 </ion-card-content>
 

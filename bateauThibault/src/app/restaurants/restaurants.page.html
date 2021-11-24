@@ -30,15 +30,8 @@
     <p>
 <ion-card-content>
   <ion-card>
-     <ion-button>Bistrot des Gascons</ion-button>
-    <ion-button>Les fous de l'île</ion-button><br>
-    <ion-button>Bistrot landais</ion-button>
-    <ion-button>Villa 9-Trois</ion-button><br>
-    <ion-button>Bistrot du Sommalier</ion-button>
-    <ion-button>Devenez partenaire</ion-button>
+     <ion-button *ngFor="let res of restaurants">{{res}}</ion-button>
   </ion-card>
-
-
 </ion-card-content>
 </ion-content>
 

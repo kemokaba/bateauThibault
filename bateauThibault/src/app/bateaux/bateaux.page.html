@@ -6,19 +6,18 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
- 
   <ion-card-header>
-    <ion-icon name="arrow-undo-outline" (click)="backHome()"></ion-icon>
     Nos beateux partenaires
   </ion-card-header>
 <ion-card-content>
   <ion-card>
-    <ion-button>De la brise</ion-button>
-    <ion-button>Shaphir</ion-button><br>
-    <ion-button>Gast Micher</ion-button>
-    <ion-button>Aquillon</ion-button><br>
-    <ion-button>Conatct</ion-button>
-    <ion-button>Conatct</ion-button>
+    <ion-button *ngFor="let bat of modelData" (click)="showModal(bat)"> 
+      {{bat.name}}
+     
+  </ion-button>
+    
+     
+    
   </ion-card>
 </ion-card-content>
 </ion-content>

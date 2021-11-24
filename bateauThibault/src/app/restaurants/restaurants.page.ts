@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestaurantsPage implements OnInit {
 
+  restaurants =  [ "Bistrot des Gascons", 
+   "Les fous de l'île", 
+   "Bistrot landais",
+  "Villa 9-Trois" ,
+  "Bistrot du Sommalier" ,
+  "Devenez partenaire" ]
+
   constructor() { }
 
   ngOnInit() {

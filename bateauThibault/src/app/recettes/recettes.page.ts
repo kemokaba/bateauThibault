@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecettesPage implements OnInit {
 
+  recettes = [ "Homard" ,  "St Jacques" ,  "Bar",   "Tourteu", "Recettes","Recttes" ];
+
   constructor() { }
 
   ngOnInit() {

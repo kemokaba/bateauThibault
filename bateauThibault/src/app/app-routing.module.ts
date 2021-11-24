@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'contacts',
     loadChildren: () => import('./contacts/contacts.module').then( m => m.ContactsPageModule)
   },
+  {
+    path: 'modal-bateau',
+    loadChildren: () => import('./modal-bateau/modal-bateau.module').then( m => m.ModalBateauPageModule)
+  },
 
 ];
 

@@ -25,7 +25,19 @@ const routes: Routes = [
   {
     path: 'contacts',
     loadChildren: () => import('./pages/contacts/contacts.module').then( m => m.ContactsPageModule)
+  },  {
+    path: 'modal-bateau',
+    loadChildren: () => import('./pages/modal-bateau/modal-bateau.module').then( m => m.ModalBateauPageModule)
   },
+  {
+    path: 'modal-recette',
+    loadChildren: () => import('./pages/modal-recette/modal-recette.module').then( m => m.ModalRecettePageModule)
+  },
+  {
+    path: 'modal-restaurent',
+    loadChildren: () => import('./pages/modal-restaurent/modal-restaurent.module').then( m => m.ModalRestaurentPageModule)
+  },
+
 
 
 

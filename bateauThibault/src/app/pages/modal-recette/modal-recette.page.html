@@ -1,0 +1,19 @@
+<ion-header>  
+  <ion-toolbar  >  
+    <ion-buttons slot="start">
+      <ion-button color="danger" (click)="dismiss()">
+        <span ion-text color="primary" showWhen="ios,android,windows"></span>
+        <ion-icon name="close" showWhen="android,windows, windows"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{modelData.name}}</ion-title>  
+  </ion-toolbar>  
+</ion-header>   
+<ion-content color="light">  
+  <ion-card>
+    <ion-img [src]="modelData.photo"></ion-img>
+    <ion-card-header>
+      <ion-card-title>{{modelData.infos}}</ion-card-title>
+    </ion-card-header>   
+    </ion-card>
+</ion-content> 

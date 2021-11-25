@@ -3,37 +3,31 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: '',
+    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },  {
-    path: 'produit-promotions',
-    loadChildren: () => import('./produit-promotions/produit-promotions.module').then( m => m.ProduitPromotionsPageModule)
+    path: 'produits',
+    loadChildren: () => import('./pages/produits/produits.module').then( m => m.ProduitsPageModule)
   },
   {
     path: 'bateaux',
-    loadChildren: () => import('./bateaux/bateaux.module').then( m => m.BateauxPageModule)
+    loadChildren: () => import('./pages/bateaux/bateaux.module').then( m => m.BateauxPageModule)
   },
   {
     path: 'restaurants',
-    loadChildren: () => import('./restaurants/restaurants.module').then( m => m.RestaurantsPageModule)
+    loadChildren: () => import('./pages/restaurants/restaurants.module').then( m => m.RestaurantsPageModule)
   },
   {
     path: 'recettes',
-    loadChildren: () => import('./recettes/recettes.module').then( m => m.RecettesPageModule)
+    loadChildren: () => import('./pages/recettes/recettes.module').then( m => m.RecettesPageModule)
   },
   {
     path: 'contacts',
-    loadChildren: () => import('./contacts/contacts.module').then( m => m.ContactsPageModule)
+    loadChildren: () => import('./pages/contacts/contacts.module').then( m => m.ContactsPageModule)
   },
-  {
-    path: 'modal-bateau',
-    loadChildren: () => import('./modal-bateau/modal-bateau.module').then( m => m.ModalBateauPageModule)
-  },
+
+
 
 ];
 

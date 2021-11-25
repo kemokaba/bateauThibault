@@ -1,0 +1,26 @@
+<ion-card-header [translucent]="true">    
+  <ion-list-header>
+  <ion-title class="titre">Le Bateau de Thibault</ion-title>
+  <ion-icon name="search-outline" (click)="searchActive=!searchActive"></ion-icon>
+  </ion-list-header>
+  <ion-toolbar *ngIf="searchActive">
+      <ion-searchbar class="searchbar"></ion-searchbar>
+  </ion-toolbar>
+      <!-- List Header with Button -->
+      <ion-list-header class="header_menu">
+        <ion-button (click)="produits()">Produits</ion-button>
+        <ion-button (click)="recette()">Recettes</ion-button>
+        <ion-button (click)="restaurant()">Restaurants</ion-button>
+        <ion-button (click)="bateau()">Bateaux</ion-button>
+        <ion-button (click)="contact()">Contacts</ion-button>
+      </ion-list-header>
+</ion-card-header>
+
+
+<ion-card-content> 
+
+    Vente en direct de notre bureau
+    Produit selon la saison, Livraison sur Paris
+
+</ion-card-content>  
+

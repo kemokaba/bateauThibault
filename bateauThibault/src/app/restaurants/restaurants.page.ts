@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ModalRestaurentPage } from '../modal-restaurent/modal-restaurent.page';
 
 @Component({
   selector: 'app-restaurants',
@@ -7,14 +9,43 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestaurantsPage implements OnInit {
 
-  restaurants =  [ "Bistrot des Gascons", 
-   "Les fous de l'île", 
-   "Bistrot landais",
-  "Villa 9-Trois" ,
-  "Bistrot du Sommalier" ,
-  "Devenez partenaire" ]
+  modelData: any[]=[
+    {
+      name :"Bistrot des Gascons",
+      photo:"/assets/imgs/desGascons.png", 
+      infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
+    },
+    {
+      name:"Les fous de l'île", 
+      photo:"/assets/imgs/fousDeLIle.png", 
+      infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
+    },
+    {
+      name:"Bistrot landais", 
+      photo:"/assets/imgs/bistrotLandais.png", 
+      infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
+    },
+    {
+      name: "Villa 9-Trois",  
+      photo:"/assets/imgs/villa9Trois.png", 
+      infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
+    },
+    {
+      name: "Bistrot du Sommalier",  
+      photo:"/assets/imgs/duSommelier.png", 
+      iinfos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
+    },
+     
+  ]
 
-  constructor() { }
+  constructor(private  modalCtrl: ModalController) { }
+  async showModal(modelData){
+    const modal = await this.modalCtrl.create({
+      component: ModalRestaurentPage,
+      componentProps: {modelData}
+    });
+    return await modal.present();
+  }
 
   ngOnInit() {
   }

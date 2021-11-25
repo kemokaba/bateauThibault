@@ -34,6 +34,14 @@ const routes: Routes = [
     path: 'modal-bateau',
     loadChildren: () => import('./modal-bateau/modal-bateau.module').then( m => m.ModalBateauPageModule)
   },
+  {
+    path: 'modal-restaurent',
+    loadChildren: () => import('./modal-restaurent/modal-restaurent.module').then( m => m.ModalRestaurentPageModule)
+  },
+  {
+    path: 'modal-recette',
+    loadChildren: () => import('./modal-recette/modal-recette.module').then( m => m.ModalRecettePageModule)
+  },
 
 ];
 

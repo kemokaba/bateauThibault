@@ -4,6 +4,10 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
+  ion-content {
+    --background: url("../assets/imgs/background.png") no-repeat center center /
+    cover;
+  }
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;

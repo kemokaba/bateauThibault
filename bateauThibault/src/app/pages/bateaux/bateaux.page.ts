@@ -35,7 +35,11 @@ export class BateauxPage implements OnInit {
  
 ]
   
-  constructor(public modalCtrl: ModalController) {}  
+  
+constructor( private router : Router, private modalCtrl: ModalController) { }
+button_home(){
+  this.router.navigate(['/home'])
+}
 async showModal(modelData){
   const modal = await this.modalCtrl.create({
     component: ModalBateauPage,

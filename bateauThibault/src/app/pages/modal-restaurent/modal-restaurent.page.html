@@ -9,12 +9,12 @@
     <ion-title>{{modelData.name}}</ion-title>  
   </ion-toolbar>  
 </ion-header>   
-<ion-content color="light">  
-  <ion-card>
-    <ion-img [src]="modelData.photo"></ion-img>
+<ion-content >  
+  <ion-card class="card" style="width: 40%;">
     <ion-card-header>
-      <ion-card-title>{{modelData.infos}}</ion-card-title>
-    </ion-card-header>   
-    </ion-card>
+      <ion-card-subtitle><ion-img [src]="modelData.photo"></ion-img></ion-card-subtitle>
+    </ion-card-header>
+ </ion-card>
+<p class="texte">{{modelData.infos}}</p>
 </ion-content> 
 

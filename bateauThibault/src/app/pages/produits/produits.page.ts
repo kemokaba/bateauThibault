@@ -58,35 +58,14 @@ export class ProduitsPage implements OnInit {
   }
   addToCart(product) {
     this.cartService.addProduct(product);
-    this.animateCSS('tada');
   }
  
   async openCart() {
-    this.animateCSS('bounceOutLeft', true);
  
     let modal = await this.modalCtrl.create({
       component: CartModalPage,
       cssClass: 'cart-modal'
     });
-    modal.onWillDismiss().then(() => {
-      this.fab.nativeElement.classList.remove('animated', 'bounceOutLeft')
-      this.animateCSS('bounceInLeft');
-    });
     modal.present();
   }
- 
-  animateCSS(animationName, keepAnimated = false) {
-    const node = this.fab.nativeElement;
-    node.classList.add('animated', animationName)
-    
-    //https://github.com/daneden/animate.css
-    function handleAnimationEnd() {
-      if (!keepAnimated) {
-        node.classList.remove('animated', animationName);
-      }
-      node.removeEventListener('animationend', handleAnimationEnd)
-    }
-    node.addEventListener('animationend', handleAnimationEnd)
-  }
 }
-

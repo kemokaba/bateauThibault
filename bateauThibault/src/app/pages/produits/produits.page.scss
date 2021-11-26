@@ -1,11 +1,26 @@
-
-ion-fab-button {
-  height: 70px;
-  width: 70px;
+.para{
+     
+  display:block;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 100%;
+  font-style: italic;
 }
- 
-.cart-icon {
-  font-size: 30px;
+.card {
+   
+  display: block;
+  margin: 10px auto;
+  width: 40%;
+  height: 40%;
+  position: relative;
+  text-align: center;
+   
+}
+
+.titre {
+  text-align: center; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 }
  
 .cart-length {
@@ -19,12 +34,13 @@ ion-fab-button {
   z-index: 10;
 }
 
-.card {
-  display: block;
-  margin: 10px auto;
-  width: 40%;
-  height: 40%;
-  position: relative;
-  text-align: center;
-    
+ 
+
+.img {
+  margin: 10px;
+  max-width: 100%;  
+  height: auto;  
+  max-height: 100%;   
+  
+ 
 }

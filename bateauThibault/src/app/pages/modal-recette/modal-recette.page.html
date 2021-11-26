@@ -10,10 +10,16 @@
   </ion-toolbar>  
 </ion-header>   
 <ion-content >  
-  <ion-card class="card" style="width: 50%;">
-    <ion-card-header>
-      <ion-card-subtitle><ion-img [src]="modelData.photo"></ion-img></ion-card-subtitle>
-    </ion-card-header>
- </ion-card>
- <p class="texte">{{modelData.infos}}</p>
+  <ion-row>
+    <ion-card class="card">
+      <ion-img class="img"   [src]="modelData.photo"></ion-img>
+  <ion-footer>
+     <ion-row>
+       <ion-col >
+        <p class="texte">{{modelData.infos}}</p>
+       </ion-col>
+     </ion-row>
+  </ion-footer>
+  </ion-card>
+  </ion-row>
 </ion-content> 

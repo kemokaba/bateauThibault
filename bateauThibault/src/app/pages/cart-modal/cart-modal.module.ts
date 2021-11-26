@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PannierPageRoutingModule } from './pannier-routing.module';
+import { CartModalPageRoutingModule } from './cart-modal-routing.module';
 
-import { PannierPage } from './pannier.page';
+import { CartModalPage } from './cart-modal.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PannierPageRoutingModule
+    CartModalPageRoutingModule
   ],
-  declarations: [PannierPage]
+  declarations: [CartModalPage]
 })
-export class PannierPageModule {}
+export class CartModalPageModule {}

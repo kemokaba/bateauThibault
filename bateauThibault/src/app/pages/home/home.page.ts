@@ -18,21 +18,21 @@ export class HomePage {
   }
 
   produits(){
-    this.router.navigate(['/produits'])
+    this.router.navigate(['tabs/produits'])
   }
 
   bateau(){
-    this.router.navigate(['/bateaux']);
+    this.router.navigate(['tabs/bateaux']);
   }
 
   restaurant(){
-    this.router.navigate(['/restaurants']);
+    this.router.navigate(['tabs/restaurants']);
   }
 
   recette(){
-    this.router.navigate(['/recettes']);
+    this.router.navigate(['tabs/recettes']);
   }
   contact(){
-    this.router.navigate(['/contacts']);
+    this.router.navigate(['tabs/contacts']);
   }
 }

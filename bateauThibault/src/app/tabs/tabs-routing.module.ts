@@ -20,11 +20,65 @@ const routes: Routes = [
         ]
       },      
       {
-        path: 'pannier',
+        path: 'panier',
         children: [
           {
             path: '',
-            loadChildren: () => import('../pages/pannier/pannier.module').then( m => m.PannierPageModule)
+            loadChildren: () => import('../pages/panier/panier.module').then( m => m.PanierPageModule)
+          }
+        ]
+      },
+      {
+        path: 'cart-modal',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../pages/cart-modal/cart-modal.module').then( m => m.CartModalPageModule)
+          }
+        ]
+      },
+      {
+        path: 'produits',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../pages/produits/produits.module').then( m => m.ProduitsPageModule)
+          }
+        ]
+      },
+      {
+        path: 'recettes',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../pages/recettes/recettes.module').then( m => m.RecettesPageModule)
+          }
+        ]
+      },
+      {
+        path: 'restaurants',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../pages/restaurants/restaurants.module').then( m => m.RestaurantsPageModule)
+          }
+        ]
+      },
+      {
+        path: 'bateaux',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../pages/bateaux/bateaux.module').then( m => m.BateauxPageModule)
+          }
+        ]
+      },
+      {
+        path: 'contacts',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../pages/contacts/contacts.module').then( m => m.ContactsPageModule)
           }
         ]
       },

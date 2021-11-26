@@ -25,7 +25,9 @@ const routes: Routes = [
   {
     path: 'contacts',
     loadChildren: () => import('./pages/contacts/contacts.module').then( m => m.ContactsPageModule)
-  },  {
+  },
+  
+  {
     path: 'modal-bateau',
     loadChildren: () => import('./pages/modal-bateau/modal-bateau.module').then( m => m.ModalBateauPageModule)
   },

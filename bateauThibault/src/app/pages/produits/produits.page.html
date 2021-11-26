@@ -34,20 +34,17 @@
 <ion-content>
   <ion-row>
     <ion-card class="card" *ngFor="let produit of ProduitsList">
-      <ion-img [src]="produit.imgURL"></ion-img>
+      <ion-img class="img" [src]="produit.imgURL"></ion-img>
       <ion-card-title class="titre">{{ produit.name }}</ion-card-title>
-      <ion-label>
-        <b>{{ produit.price | currency:'€' }}</b>
-      </ion-label>
-      <ion-footer>
+        <b class="price">{{ produit.price | currency:'€' }}</b>
         <ion-row>
           <ion-col>
-            <ion-button (click)="addToCart(produit)">
+            <ion-button class="button" (click)="addToCart(produit)" >
               <ion-icon name="add"></ion-icon>
             </ion-button>
           </ion-col>
         </ion-row>
-      </ion-footer>
+
     </ion-card>
   </ion-row>
 </ion-content>

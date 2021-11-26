@@ -9,7 +9,7 @@
     "discount": 0.0,
     "comments": "Pêche à la corde",
     "owner": "tig",
-    "imgURL":""
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Aile%20de%20raie.png"
 }, {
     "id": 2,
     "name": "Araignées",
@@ -21,7 +21,7 @@
     "discount": 0.0,
     "comments": "Hors saison,  pêche aux casiers",
     "owner": "tig",
-    "imgURL":""
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Araign%C3%A9es.jpeg"
 }, {
     "id": 3,
     "name": "Bar de ligne",
@@ -33,7 +33,7 @@
     "discount": 0.0,
     "comments": "Plus de 1.5kg le poisson",
     "owner": "tig",
-    "imgURL":""
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Bar%20de%20ligne.jpeg"
 }, {
     "id": 4,
     "name": "Bar de ligne portion",
@@ -45,7 +45,7 @@
     "discount": 0.0,
     "comments": "Environ 550-700g la pièce",
     "owner": "tig",
-    "imgURL":""
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Bar%20de%20ligne.jpeg"
 }, {
     "id": 5,
     "name": "Bouquets cuits",
@@ -57,7 +57,7 @@
     "discount": 0.0,
     "comments": "Hors saison, pêche à l'épuisette",
     "owner": "tig",
-    "imgURL":""
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/ouquets%20cuits.jpeg"
 }, {
     "id": 6,
     "name": "Filet Bar de ligne",
@@ -69,7 +69,7 @@
     "discount": 0.0,
     "comments": "environ 300g",
     "owner": "tig",
-    "imgURL":""
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Bar%20de%20ligne.jpeg"
 }, {
     "id": 7,
     "name": "Filet Julienne",
@@ -81,7 +81,7 @@
     "discount": 0.0,
     "comments": "Pêche à la corde",
     "owner": "tig",
-    "imgURL":""
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Filet%20Julienne.jpeg"
 }, {
     "id": 8,
     "name": "Huitres N°2 St Vaast",
@@ -93,7 +93,7 @@
     "discount": 0.0,
     "comments": "",
     "owner": "tig",
-    "imgURL":""
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Huitres%20N%C2%B02%20St%20Vaast.jpeg"
 }, {
     "id": 9,
     "name": "Huîtres N°2 OR St Vaast",
@@ -105,7 +105,7 @@
     "discount": 0.0,
     "comments": "Médaille d'or Salon Agriculture",
     "owner": "tig",
-    "imgURL":""
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Huitres%20N%C2%B02%20St%20Vaast.jpeg"
 }, {
     "id": 10,
     "name": "Lieu jaune de ligne",
@@ -117,7 +117,7 @@
     "discount": 0.0,
     "comments": "Environ 550-700g la portion",
     "owner": "tig",
-    "imgURL":""
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Lieu%20jaune%20de%20ligne.jpeg"
 }, {
     "id": 11,
     "name": "Moules de pêche",
@@ -129,5 +129,5 @@
     "discount": 5.0,
     "comments": "",
     "owner": "tig",
-    "imgURL":""
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Moules%20de%20p%C3%AAche.jpeg"
 }]

@@ -15,21 +15,25 @@ export class BateauxPage implements OnInit {
   {
     name :"saphir",
     photo:"/assets/imgs/saphir.png", 
+    photos:"/assets/imgs/saphir_icon.png", 
     infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s" 
   },
   {
     name:"De la brise", 
     photo:"/assets/imgs/deLaBrise.png", 
+    photos:"/assets/imgs/deLaBrise_icon.png",
     infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
   },
   {
     name:"Gast Micher", 
     photo:"/assets/imgs/gastMicher.png", 
+    photos:"/assets/imgs/gastMicher_icon.png", 
     infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
   },
   {
     name: "Aquillons",  
     photo:"/assets/imgs/aquilon.png", 
+    photos:"/assets/imgs/aquilon_icon.png", 
     infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
   },
  

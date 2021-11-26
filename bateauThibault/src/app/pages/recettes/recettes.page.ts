@@ -14,22 +14,26 @@ export class RecettesPage implements OnInit {
   modelData: any[]=[
     { name :"Homard",
       photo:"/assets/imgs/homardRecette.png", 
+      photos:"/assets/imgs/homardRecette_icon.png", 
       infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles;C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
    },
 
     {
       name:"St Jacques", 
       photo:"/assets/imgs/saintJacques.png", 
+      photos:"/assets/imgs/saintJacques_icon.png", 
       infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
     },
     {
        name:"Bar",
        photo:"/assets/imgs/barRecette.png", 
+       photos:"/assets/imgs/barRecette_icon.png", 
        infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
     },
     {
        name: "Tourteu", 
        photo:"/assets/imgs/tourteau.png",
+       photos:"/assets/imgs/tourteau.png",
        infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
       },
 

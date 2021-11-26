@@ -4,26 +4,29 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>
-    <p class="titre">Bateau Thibault</p> 
+      <p class="titre">Bateau Thibault</p>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-  <ion-content>
-    <p class="para">Nos Bateaux</p>
-     <ion-row>
-      <ion-card class="card"   *ngFor="let bat of modelData">
-        <ion-img class="img"   [src]="bat.photo"></ion-img>
-    <ion-footer>
-       <ion-row>
-         <ion-col >
-          <ion-button expand="block" style="margin: 0 auto; display: block;" color="light" (click)=showModal(bat)>{{bat.name}}</ion-button>
-         </ion-col>
-       </ion-row>
-    </ion-footer>
-  </ion-card>
-</ion-row>
-   </ion-content>
- 
-
- 
+<ion-content>
+  <p class="para">Nos Bateaux</p>
+  <ion-row>
+    <ion-card class="card" *ngFor="let bat of modelData">
+      <ion-img class="img" [src]="bat.photos"></ion-img>
+      <ion-footer>
+        <ion-row>
+          <ion-col>
+            <ion-button
+              expand="block"
+              style="margin: 0 auto; display: block"
+              color="light"
+              (click)="showModal(bat)"
+              >{{bat.name}}</ion-button
+            >
+          </ion-col>
+        </ion-row>
+      </ion-footer>
+    </ion-card>
+  </ion-row>
+</ion-content>

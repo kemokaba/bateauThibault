@@ -14,26 +14,31 @@ export class RestaurantsPage implements OnInit {
     {
       name :"Bistrot des Gascons",
       photo:"/assets/imgs/desGascons.png", 
+      photos:"/assets/imgs/desGascons_icon.png", 
       infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
     },
     {
       name:"Les fous de l'île", 
       photo:"/assets/imgs/fousDeLIle.png", 
+      photos:"/assets/imgs/fousDeLIle_icon.png", 
       infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
     },
     {
       name:"Bistrot landais", 
-      photo:"/assets/imgs/bistrotLandais.png", 
+      photo:"/assets/imgs/bistrotLandais.png",
+      photos:"/assets/imgs/bistrotLandais_icon.png", 
       infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
     },
     {
       name: "Villa 9-Trois",  
       photo:"/assets/imgs/villa9Trois.png", 
+      photos:"/assets/imgs/villa9Trois_icon.png", 
       infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
     },
     {
       name: "Bistrot du Sommalier",  
       photo:"/assets/imgs/duSommelier.png", 
+      photos:"/assets/imgs/duSommelier_icon.png", 
       infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
     },
      

@@ -4,7 +4,7 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>
-     <p class="titre">Restaurant</p>
+      <p class="titre">Restaurant</p>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,27 +12,21 @@
 <ion-content>
   <p class="para">Nos Restaurants partenaires</p>
   <ion-row>
-    <ion-card class="card"   *ngFor="let res of modelData">
-      <ion-img class="img"   [src]="res.photo"></ion-img>
-  <ion-footer>
-     <ion-row>
-       <ion-col >
-        <ion-button expand="block" style="margin: 0 auto; display: block;" color="light" (click)=showModal(res)>{{res.name}}</ion-button>
-       </ion-col>
-     </ion-row>
-  </ion-footer>
-</ion-card>
-</ion-row>
+    <ion-card class="card" *ngFor="let res of modelData">
+      <ion-img class="img" [src]="res.photos"></ion-img>
+      <ion-footer>
+        <ion-row>
+          <ion-col>
+            <ion-button
+              expand="block"
+              style="margin: 0 auto; display: block"
+              color="light"
+              (click)="showModal(res)"
+              >{{res.name}}</ion-button
+            >
+          </ion-col>
+        </ion-row>
+      </ion-footer>
+    </ion-card>
+  </ion-row>
 </ion-content>
-
-
-
- 
-
-
-
-
-
-
-
-

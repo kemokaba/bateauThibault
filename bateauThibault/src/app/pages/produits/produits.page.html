@@ -29,19 +29,17 @@
       <ion-icon name="cart" class="cart-icon"></ion-icon>
     </ion-fab-button>
   </ion-fab>-->
-  <ion-list>
-    <ion-card *ngFor="let p of products">
+  
+    <ion-card class="card" *ngFor="let p of products">
       <ion-card-header>
-        <ion-card-title>{{ p.name }}</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <ion-row class="ion-align-items-center">
-          <ion-col size="8">
+        <ion-card-title>{{ p.name }}</ion-card-title>
+        <ion-row>
+          <ion-col>
             <ion-label color="secondary">
               <b>{{ p.price | currency:'€' }}</b>
             </ion-label>
-          </ion-col>
-          <ion-col size="4" class="ion-text-right">
             <ion-button fill="clear" (click)="addToCart(p)">
               <ion-icon name="add"></ion-icon>
             </ion-button>
@@ -49,5 +47,5 @@
         </ion-row>
       </ion-card-content>
     </ion-card>
-  </ion-list>
+  
 </ion-content>

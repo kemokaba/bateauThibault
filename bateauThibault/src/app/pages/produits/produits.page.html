@@ -1,51 +1,53 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>produits</ion-title>
+    <ion-title>
+      <p class="titre">Produits</p>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <!--
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let produit of ProduitsList" >
-      {{ produit.name }}
-      <ion-icon name="add" (click)="AddToCart(produit)">Add</ion-icon>
-    </ion-item>
-    <ion-item *ngFor="let term of liste;">
-      <p>{{term}}</p>
-  </ion-item>
- </ion-list>
-</ion-content>
--->
-
-<ion-content>
-  <!--
-  <ion-fab vertical="top" horizontal="end" slot="fixed">
-    <ion-fab-button (click)="openCart()" #cart>
-      <div class="cart-length">{{ cartItemCount | async }}</div>
-      <ion-icon name="cart" class="cart-icon"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>-->
-  
+  <p class="para">Nos produits</p>
+  <ion-row>
     <ion-card class="card" *ngFor="let p of products">
-      <ion-card-header>
-      </ion-card-header>
-      <ion-card-content>
-        <ion-card-title>{{ p.name }}</ion-card-title>
+      <ion-card-title>{{ p.name }}</ion-card-title>
+      <ion-label>
+        <b>{{ p.price | currency:'€' }}</b>
+      </ion-label>
+      <ion-footer>
         <ion-row>
           <ion-col>
-            <ion-label color="secondary">
-              <b>{{ p.price | currency:'€' }}</b>
-            </ion-label>
-            <ion-button fill="clear" (click)="addToCart(p)">
+            <ion-button (click)="addToCart(p)">
               <ion-icon name="add"></ion-icon>
             </ion-button>
           </ion-col>
         </ion-row>
-      </ion-card-content>
+      </ion-footer>
     </ion-card>
-  
+  </ion-row>
+</ion-content>
+-->
+
+<ion-content>
+  <ion-row>
+    <ion-card class="card" *ngFor="let produit of ProduitsList">
+      <ion-img [src]="produit.imgURL"></ion-img>
+      <ion-card-title class="titre">{{ produit.name }}</ion-card-title>
+      <ion-label>
+        <b>{{ produit.price | currency:'€' }}</b>
+      </ion-label>
+      <ion-footer>
+        <ion-row>
+          <ion-col>
+            <ion-button (click)="addToCart(produit)">
+              <ion-icon name="add"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-footer>
+    </ion-card>
+  </ion-row>
 </ion-content>

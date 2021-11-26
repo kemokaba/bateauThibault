@@ -1,10 +1,11 @@
 export class Produit {
     name: string;
-    /*ategory: string;
+    category: string;
     price: string;
     availability: boolean;
     sale: boolean;
-    comments: string;*/
+    comments: string;
+    imgURL: string;
 
     constructor(name: string){
         this.name = name;

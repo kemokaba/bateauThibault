@@ -1,11 +1,8 @@
 <ion-card-header [translucent]="true">    
-  <ion-list-header>
-  <ion-title class="titre">Le Bateau de Thibault</ion-title>
-  <ion-icon name="search-outline" (click)="searchActive=!searchActive"></ion-icon>
+  <ion-list-header >
+    <ion-title class="titre">Le Bateau de Thibault</ion-title>
   </ion-list-header>
-  <ion-toolbar *ngIf="searchActive">
-      <ion-searchbar class="searchbar"></ion-searchbar>
-  </ion-toolbar>
+
       <!-- List Header with Button -->
       <ion-list-header class="header_menu">
         <ion-button class="buttonHome" (click)="produits()">Produits</ion-button>

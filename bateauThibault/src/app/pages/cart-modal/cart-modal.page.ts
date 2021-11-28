@@ -1,7 +1,12 @@
 import { Product, CartService } from './../../services/panier.service';
 import { Component, OnInit } from '@angular/core';
 import { ModalController, AlertController } from '@ionic/angular';
- 
+
+interface Restaurants {
+  name: string;
+  adresse: string;
+}
+
 @Component({
   selector: 'app-cart-modal',
   templateUrl: './cart-modal.page.html',
@@ -10,7 +15,37 @@ import { ModalController, AlertController } from '@ionic/angular';
 export class CartModalPage implements OnInit {
  
   cart: Product[] = [];
- 
+  
+  restaurants: Restaurants[] = [
+    {
+      name: 'Bistrot des Gascons',
+      adresse: '',
+    },
+    {
+      name: "Les fous de l'île",
+      adresse: '',
+    },
+    {
+      name: 'Bistrot landais',
+      adresse: '',
+    },
+    {
+      name: "Villa 9-Trois",  
+      adresse: ''
+    },
+    {
+      name: "Bistrot du Sommalier",  
+      adresse: ''
+    },
+  ];
+
+  customAlertOptions: any = {
+    header: 'Adresse de Click & Collect',
+    subHeader: 'Séléctionner votre restaurant de retrait',
+    message: 'Frais de service : gratuit',
+    translucent: true
+  };
+
   constructor(private cartService: CartService, private modalCtrl: ModalController, private alertCtrl: AlertController) { }
  
   ngOnInit() {
@@ -47,6 +82,6 @@ export class CartModalPage implements OnInit {
     });
     alert.present().then(() => {
       this.modalCtrl.dismiss();
-    });
+    }); 
   }
 }

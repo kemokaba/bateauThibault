@@ -43,9 +43,9 @@
               </ion-button>
             </ion-col>
           </ion-row>
-
         </ion-grid>
       </ion-item>
+
       <ion-item>
         <ion-grid>
           <ion-row>
@@ -59,10 +59,27 @@
         </ion-grid>
       </ion-item>
     </ion-list>
+    <ion-list>
+      <ion-list-header>
+        <ion-label>
+          Adresse de livraison
+        </ion-label>
+      </ion-list-header>
+    
+      <ion-item>
+        <ion-label>Restaurant</ion-label>
+        <ion-select [interfaceOptions]="customAlertOptions" interface="alert" placeholder="Select One">             
+          <ion-row> 
+              <ion-select-option *ngFor="let restaurant of restaurants" [value]="restaurant">{{restaurant.name}}</ion-select-option>
+          </ion-row>       
+        </ion-select>
+      </ion-item>
+    </ion-list>
  
     <ion-button expand="full" (click)="checkout()">
-      Checkout
+      Valider la commande
     </ion-button>
   </div>
- 
-</ion-content>
+
+  
+</ion-content> 

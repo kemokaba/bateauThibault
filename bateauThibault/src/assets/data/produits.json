@@ -8,7 +8,8 @@
     "sale": false,
     "discount": 0.0,
     "comments": "Pêche à la corde",
-    "owner": "tig"
+    "owner": "tig",
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Aile%20de%20raie.png"
 }, {
     "id": 2,
     "name": "Araignées",
@@ -19,7 +20,8 @@
     "sale": false,
     "discount": 0.0,
     "comments": "Hors saison,  pêche aux casiers",
-    "owner": "tig"
+    "owner": "tig",
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Araign%C3%A9es.jpeg"
 }, {
     "id": 3,
     "name": "Bar de ligne",
@@ -30,7 +32,8 @@
     "sale": false,
     "discount": 0.0,
     "comments": "Plus de 1.5kg le poisson",
-    "owner": "tig"
+    "owner": "tig",
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Bar%20de%20ligne.jpeg"
 }, {
     "id": 4,
     "name": "Bar de ligne portion",
@@ -41,7 +44,8 @@
     "sale": false,
     "discount": 0.0,
     "comments": "Environ 550-700g la pièce",
-    "owner": "tig"
+    "owner": "tig",
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Bar%20de%20ligne.jpeg"
 }, {
     "id": 5,
     "name": "Bouquets cuits",
@@ -52,7 +56,8 @@
     "sale": false,
     "discount": 0.0,
     "comments": "Hors saison, pêche à l'épuisette",
-    "owner": "tig"
+    "owner": "tig",
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/ouquets%20cuits.jpeg"
 }, {
     "id": 6,
     "name": "Filet Bar de ligne",
@@ -63,7 +68,8 @@
     "sale": false,
     "discount": 0.0,
     "comments": "environ 300g",
-    "owner": "tig"
+    "owner": "tig",
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Bar%20de%20ligne.jpeg"
 }, {
     "id": 7,
     "name": "Filet Julienne",
@@ -74,7 +80,8 @@
     "sale": false,
     "discount": 0.0,
     "comments": "Pêche à la corde",
-    "owner": "tig"
+    "owner": "tig",
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Filet%20Julienne.jpeg"
 }, {
     "id": 8,
     "name": "Huitres N°2 St Vaast",
@@ -85,20 +92,10 @@
     "sale": false,
     "discount": 0.0,
     "comments": "",
-    "owner": "tig"
+    "owner": "tig",
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Huitres%20N%C2%B02%20St%20Vaast.jpeg"
 }, {
     "id": 9,
-    "name": "Huitres N°2 St Vaast",
-    "category": 1,
-    "price": 38.0,
-    "unit": "4 Dz",
-    "availability": true,
-    "sale": false,
-    "discount": 0.0,
-    "comments": "",
-    "owner": "tig"
-}, {
-    "id": 10,
     "name": "Huîtres N°2 OR St Vaast",
     "category": 1,
     "price": 12.0,
@@ -107,42 +104,10 @@
     "sale": false,
     "discount": 0.0,
     "comments": "Médaille d'or Salon Agriculture",
-    "owner": "tig"
+    "owner": "tig",
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Huitres%20N%C2%B02%20St%20Vaast.jpeg"
 }, {
-    "id": 11,
-    "name": "Huîtres N°2 OR St Vaast",
-    "category": 1,
-    "price": 24.0,
-    "unit": "2 Dz",
-    "availability": true,
-    "sale": false,
-    "discount": 0.0,
-    "comments": "Médaille d'or salon agriculture",
-    "owner": "tig"
-}, {
-    "id": 12,
-    "name": "Huîtres N°2 OR St Vaast",
-    "category": 1,
-    "price": 48.0,
-    "unit": "4 Dz",
-    "availability": true,
-    "sale": false,
-    "discount": 0.0,
-    "comments": "Médaille d'or salon agriculture",
-    "owner": "tig"
-}, {
-    "id": 13,
-    "name": "Huîtres N°2 St Vaast",
-    "category": 1,
-    "price": 19.0,
-    "unit": "2 Dz",
-    "availability": true,
-    "sale": false,
-    "discount": 0.0,
-    "comments": "",
-    "owner": "tig"
-}, {
-    "id": 14,
+    "id": 10,
     "name": "Lieu jaune de ligne",
     "category": 0,
     "price": 12.0,
@@ -151,9 +116,10 @@
     "sale": false,
     "discount": 0.0,
     "comments": "Environ 550-700g la portion",
-    "owner": "tig"
+    "owner": "tig",
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Lieu%20jaune%20de%20ligne.jpeg"
 }, {
-    "id": 15,
+    "id": 11,
     "name": "Moules de pêche",
     "category": 1,
     "price": 7.0,
@@ -162,5 +128,6 @@
     "sale": true,
     "discount": 5.0,
     "comments": "",
-    "owner": "tig"
+    "owner": "tig",
+    "imgURL":"https://raw.githubusercontent.com/kemokaba/bateauThibault/dev2/ImagesProduits/Moules%20de%20p%C3%AAche.jpeg"
 }]

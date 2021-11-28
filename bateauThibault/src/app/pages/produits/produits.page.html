@@ -22,22 +22,26 @@
 -->
 
 <ion-content>
-   
- 
+  <!--
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="openCart()" #cart>
+      <div class="cart-length">{{ cartItemCount | async }}</div>
+      <ion-icon name="cart" class="cart-icon"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>-->
   <ion-list>
- 
-  
-    <ion-card class="card" *ngFor="let p of products">
- 
+    <ion-card *ngFor="let p of products" class="card" color="grey">
       <ion-card-header>
+        <ion-card-title>{{ p.name }}</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <ion-card-title>{{ p.name }}</ion-card-title>
-        <ion-row>
-          <ion-col>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="8">
             <ion-label color="secondary">
               <b>{{ p.price | currency:'€' }}</b>
             </ion-label>
+          </ion-col>
+          <ion-col size="4" class="ion-text-right">
             <ion-button fill="clear" (click)="addToCart(p)">
               <ion-icon name="add"></ion-icon>
             </ion-button>
@@ -45,6 +49,5 @@
         </ion-row>
       </ion-card-content>
     </ion-card>
-    </ion-list>
-  
+  </ion-list>
 </ion-content>

@@ -7,16 +7,6 @@ import { ModalController } from '@ionic/angular';
 import { BehaviorSubject } from 'rxjs';
 import { CartService } from 'src/app/services/panier.service';
 
-/*
-import * as fs from 'fs';
-if (fs.existsSync('/assets/data/produits.json'))
-{
-  let userBugsJson = JSON.parse(fs.readFileSync("/assets/data/produits.json", "utf-8"));
-  const data = userBugsJson['name'];
-  return
-}
-*/
-
 @Component({
   selector: 'app-produits',
   templateUrl: './produits.page.html',
@@ -26,35 +16,6 @@ if (fs.existsSync('/assets/data/produits.json'))
 export class ProduitsPage implements OnInit {
 
   ProduitsList: Produit[];
-
-
-  //Liste ImagesProduits
-
-  ImagesProduits: any[]=[
-    { name :"Aile de raie",
-      photo:"/assets/imgs/Aile de raie", 
-      photos:"/assets/imgs/Aile de raie", 
-   },
-
-    {
-      name:"St Jacques", 
-      photo:"/assets/imgs/saintJacques.png", 
-      photos:"/assets/imgs/saintJacques_icon.png", 
-      infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
-    },
-    {
-       name:"Bar",
-       photo:"/assets/imgs/barRecette.png", 
-       photos:"/assets/imgs/barRecette_icon.png", 
-       infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
-    },
-    {
-       name: "Tourteu", 
-       photo:"/assets/imgs/tourteau.png",
-       photos:"/assets/imgs/tourteau.png",
-       infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
-      },
-  ]
 
   //Test
   cart = [];
@@ -88,4 +49,6 @@ export class ProduitsPage implements OnInit {
     });
     modal.present();
   }
+
+  searchActive = false;
 }

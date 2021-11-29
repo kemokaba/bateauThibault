@@ -1,13 +1,15 @@
 .card {
-    width:50%; // adjust width on your ion-card suitable on your screen
-display:block;
-margin: 10px auto;
-}
+
+    width:100%; // adjust width on your ion-card suitable on your screen
+    display:block;
+    margin: 10px auto;
+    height: 100%;
+    }
 
 .texte{
     display: block;
     font-style: normal;
-    font-family:arial, sans-serif;
+    font-family:arial, sans-serif,Georgia;
     text-align: center;
 
 }

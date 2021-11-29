@@ -14,10 +14,9 @@
   height: 200px;
   position: relative;
   text-align: center;
-   
 }
 
-.titre {
+.titre_produits{
   text-align: center; 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 12px;
@@ -26,34 +25,19 @@
 .price{
   font-size:10px;
 }
- 
-.cart-length {
-  color: var(--ion-color-primary);
-  position: flex;
-  top: 18px;
-  left: 25px;
-  font-weight: 600;
-  font-size: 1em;
-  min-width: 25px;
-  z-index: 10;
-}
-
- 
 
 .img {
   margin: 10px;
- 
-  max-width: 100%;  
-  height: auto;  
-  max-height: 100%;   
-  
- 
- 
   width: 140px;  
   height: 100px;   
 }
 
 .button {
   font-size: 10px;
- 
+}
+
+.search{
+  font-size: 20px;
+  padding-right: 20px;
+  float: right;
 }

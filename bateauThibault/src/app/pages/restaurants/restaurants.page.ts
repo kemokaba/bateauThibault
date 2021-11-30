@@ -14,8 +14,9 @@ export class RestaurantsPage implements OnInit {
     {
       name :"Bistrot des Gascons",
       photo:"/assets/imgs/desGascons.png", 
+      photo_2:"/assets/imgs/Bistrot des Gascons_2.png",
       photos:"/assets/imgs/desGascons_icon.png", 
-      infos: "Qu'il est chaud le soleil;Quand nous sommes en vacances Y a de la joie, des hirondelles; C\'est le sud de la France; Papa bricole au garage;Maman lit dans la chaise longue; Dans ce joli paysage; Moi, je me balade en tongs; Que de bonheur!;Que de bonheur!s"
+      infos: "Le Bistrot des Gascons, dans un cadre contemporain et un lieu historique est un restaurant de cuisine principalement Landaise."
     },
     {
       name:"Les fous de l'île", 

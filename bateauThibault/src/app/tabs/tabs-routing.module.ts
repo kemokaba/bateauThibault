@@ -20,15 +20,6 @@ const routes: Routes = [
         ]
       },      
       {
-        path: 'panier',
-        children: [
-          {
-            path: '',
-            loadChildren: () => import('../pages/panier/panier.module').then( m => m.PanierPageModule)
-          }
-        ]
-      },
-      {
         path: 'cart-modal',
         children: [
           {

@@ -73,7 +73,6 @@ export class CartModalPage implements OnInit {
   }
  
   async checkout() {
-    // Perfom PayPal or Stripe checkout process
  
     let alert = await this.alertCtrl.create({
       header: 'Thanks for your Order!',

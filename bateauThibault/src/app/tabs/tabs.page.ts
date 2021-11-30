@@ -1,8 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { CartModalPage } from '../pages/cart-modal/cart-modal.page';
 import { ModalController } from '@ionic/angular';
-import { BehaviorSubject } from 'rxjs';
-import { CartService } from 'src/app/services/panier.service';
+
 
 @Component({
   selector: 'app-tabs',
@@ -10,14 +9,11 @@ import { CartService } from 'src/app/services/panier.service';
   styleUrls: ['./tabs.page.scss'],
 })
 
-
-
 export class TabsPage implements OnInit {
 
   @ViewChild('cart', {static: false, read: ElementRef})fab: ElementRef;
 
   constructor(
-    private cartService: CartService,
     private modalCtrl: ModalController
   ) { }
 

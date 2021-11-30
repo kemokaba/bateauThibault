@@ -32,7 +32,6 @@ export class ProduitsPage implements OnInit {
     this.ProduitsService.getProduits().subscribe( res => {
       this.ProduitsList = res;
     });
-    this.products = this.cartService.getProducts();
     this.cart = this.cartService.getCart();
     this.cartItemCount = this.cartService.getCartItemCount();
   };

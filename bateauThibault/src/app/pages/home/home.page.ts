@@ -32,6 +32,7 @@ export class HomePage {
   recette(){
     this.router.navigate(['tabs/recettes']);
   }
+  
   contact(){
     this.router.navigate(['tabs/contacts']);
   }

@@ -8,7 +8,6 @@ import { TabsPageModule } from './tabs/tabs.module';
 import { TabsPageRoutingModule } from './tabs/tabs-routing.module';
 import { HttpClientModule } from '@angular/common/http'
 import { IonicStorageModule } from '@ionic/storage-angular';
-import { PanierPageModule } from './pages/panier/panier.module';
 import { CartModalPageModule } from './pages/cart-modal/cart-modal.module';
 
 
@@ -23,7 +22,6 @@ import { CartModalPageModule } from './pages/cart-modal/cart-modal.module';
     TabsPageRoutingModule,
     HttpClientModule,
     IonicStorageModule.forRoot(),
-    PanierPageModule,
     CartModalPageModule
     ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
